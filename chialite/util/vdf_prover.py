@@ -1,6 +1,6 @@
 from typing import Tuple
 
-from chialitevdf import prove
+from chiavdf import prove
 
 from chialite.consensus.constants import ConsensusConstants
 from chialite.types.blockchain_format.classgroup import ClassgroupElement

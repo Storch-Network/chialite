@@ -5,7 +5,7 @@ from enum import IntEnum
 from typing import Optional
 from functools import lru_cache
 
-from chialitevdf import create_discriminant, verify_n_wesolowski
+from chiavdf import create_discriminant, verify_n_wesolowski
 
 from chialite.consensus.constants import ConsensusConstants
 from chialite.types.blockchain_format.classgroup import ClassgroupElement

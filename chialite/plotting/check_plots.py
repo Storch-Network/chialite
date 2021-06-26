@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Dict, List
 
 from blspy import G1Element
-from chialitepos import Verifier
+from chiapos import Verifier
 
 from chialite.plotting.plot_tools import find_duplicate_plot_IDs, get_plot_filenames, load_plots, parse_plot_info
 from chialite.util.config import load_config

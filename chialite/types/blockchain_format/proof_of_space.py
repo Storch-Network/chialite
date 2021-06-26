@@ -4,7 +4,7 @@ from typing import Optional
 
 from bitstring import BitArray
 from blspy import G1Element
-from chialitepos import Verifier
+from chiapos import Verifier
 
 from chialite.consensus.constants import ConsensusConstants
 from chialite.types.blockchain_format.sized_bytes import bytes32

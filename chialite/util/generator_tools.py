@@ -1,5 +1,5 @@
 from typing import List, Tuple
-from chialitebip158 import PyBIP158
+from chiabip158 import PyBIP158
 
 from chialite.types.blockchain_format.coin import Coin
 from chialite.types.blockchain_format.sized_bytes import bytes32
