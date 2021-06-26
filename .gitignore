@@ -20,6 +20,11 @@ blockchain_test*
 *.log
 *.out
 
+# Dev
+
+dev
+.dev
+
 # Keys and plot files
 config/keys.yaml
 config/plots.yaml
