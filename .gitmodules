@@ -1,3 +1,6 @@
 [submodule "chialitelite-blockchain-gui"]
 	path = chialitelite-blockchain-gui
 	url = https://github.com/Storch-Network/chialitelite-blockchain-gui
+[submodule "mozilla-ca"]
+	path = mozilla-ca
+	url = https://github.com/Storch-Network/mozilla-ca
