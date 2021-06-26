@@ -386,7 +386,7 @@ Batch process weight proof epochs in groups of 900 to fit below May 2020 sqlite 
 - `chialite keys add` takes secret words a prompt on the command line or stdin instead of command line arguments for security.
 - Version 1.0.1 of chialitevdf was added. This brought MPIR on Windows to the most recent release. Additionally we removed inefficient ConvertIntegerToBytes() and ConvertBytesToInt() functions, use GMP library's mpz_export/mpz_import for big integers and simple helper functions for built-in integer types. The latter are taken from chialitevdf. We now require compressed forms to be encoded canonically when deserializing. This should prevent potential grinding attacks where some non-canonical encodings of a compressed form could be used to change its hash and thus the next challenges derived from it. Canonically encoded compressed forms must be reduced and must produce the same string when deserialized and serialized again.
 - Version 1.0 of our BLS signature library is included. We brought Relic, gmp and MPIR up to their most recent releases. We again thank the Dash team for their fixes and improvements.
-- We now hand build Apple Silicon native binary wheels for all chialite-blockchain dependencies and host them at [https://pypi.chialite.net/simple](https://pypi.chialite.net/simple). We are likely to hand build a MacOS ARM64 dmg available and certainly will for 1.0. You can install natively on M1 now with the `git clone` developer method today. Just make sure Python 3.9 is installed. `python3 --version` works.
+- We now hand build Apple Silicon native binary wheels for all chialite-blockchain dependencies and host them at [https://pypi.chia.net/simple](https://pypi.chia.net/simple). We are likely to hand build a MacOS ARM64 dmg available and certainly will for 1.0. You can install natively on M1 now with the `git clone` developer method today. Just make sure Python 3.9 is installed. `python3 --version` works.
 - The GUI now shows you which network you are connected to on the Full Node page. It will also wait patiently for the green flag to drop on a network launch.
 - In the GUI you can only plot k=32 or larger with the single exception of k=25 for testing. You will have to confirm choosing k=25 however. Thanks to @jespino for help on this and limiting the cli as well.
 - The restore smart wallets from backup prompt has been improved to better get the intent across and that it can be skipped.
@@ -403,7 +403,7 @@ Batch process weight proof epochs in groups of 900 to fit below May 2020 sqlite 
 - `requirements-dev.txt` has been removed in favor of the CI actions and test scripts.
 - We have moved to a new and much higher scalability download.chialite.net to support the mainnet launch flag and additional download demand.
 - To always get the latest testnet and then mainnet installers you can now use a latest URL: [Windows](https://download.chialite.net/latest/Setup-Win64.exe) and [MacOS x86_64](https://download.chialite.net/latest/Setup-MacOS.dmg).
-- Chialite wheels not on Pypi and some dependecies not found there also are now on pypi.chialite.net.
+- Chialite wheels not on Pypi and some dependecies not found there also are now on pypi.chia.net.
 - Additional typing has been added to the Python code with thanks to @jespino.
 - Cryptography and Keyring have been bumped to their current releases.
 - PRs and commits to the chialite-blockchain-gui repository will automatically have their locales updated.
